@@ -236,4 +236,7 @@ io.on("connection", (socket) => {
   });
 });
 const PORT = process.env.PORT || 4000;
+app.get("/", (req, res) => {
+  res.send("Tebak Gambar Multiplayer Backend is running.");
+});
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
